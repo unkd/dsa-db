@@ -58,10 +58,8 @@ namespace MainApp
             }
         }
 
-        private /*(string edrp, string email)*/ void ParseCardList(string cardItem, ref List<string> edrp, ref List<string> email)
+        private void ParseCardList(string cardItem, ref List<string> edrp, ref List<string> email)
         {
-            //var result = (edrp: "", email: "");
-
             string[] separators = { new string(' ', 3), Environment.NewLine, "\r", "\n" };
             string[] split = cardItem.Split(separators, StringSplitOptions.None);
             for (int i = 1; i < split.Length - 1; i++)
@@ -76,7 +74,6 @@ namespace MainApp
                 }
             }
 
-            //return result;
         }
 
         public List<Record> ParseToRecords()
@@ -84,9 +81,9 @@ namespace MainApp
             List<string> edrpList = new List<string>();
             List<string> emailList = new List<string>();
 
-            for (int i = 0; i < CardList.Count; i++)
+            foreach (var t in CardList)
             {
-                ParseCardList(cardItem: CardList[i], ref edrpList, ref emailList);
+                ParseCardList(cardItem: t, ref edrpList, ref emailList);
             }
 
             List<Record> records = new List<Record>();
