@@ -9,8 +9,8 @@ namespace MainApp
         {
             try
             {
-                //CourtGovUaParser parser = new CourtGovUaParser(HtmlStringForParser.GetTestString());
-                //PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
+                CourtGovUaParser parser = new CourtGovUaParser(HtmlStringForParser.GetTestString());
+                PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
 
                 /*
                  * Для полной работы закоментировать две строки выше и разкоментироввать строки из work региона
