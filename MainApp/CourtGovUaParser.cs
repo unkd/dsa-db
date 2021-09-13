@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HtmlAgilityPack;
 using MainApp.Models;
 
@@ -20,7 +17,7 @@ namespace MainApp
         public void MyParseHtml()
         {
             string f1Sub = "<div id = \"result\"";
-            string fLastSub = "<div id = \"paginate_block_2\"";
+            //string fLastSub = "<div id = \"paginate_block_2\"";
 
             string find_s = html.Substring(html.IndexOf(f1Sub));
 

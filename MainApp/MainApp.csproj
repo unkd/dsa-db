@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CourtGovUaParser.cs" />
+    <Compile Include="HtmlGetter.cs" />
     <Compile Include="HtmlStringForParser.cs" />
     <Compile Include="Models\PrintConsoleRecords.cs" />
     <Compile Include="Program.cs" />
@@ -73,7 +74,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="htmlForTest.txt" />
+    <Content Include="Test\AnswerExample.txt" />
+    <Content Include="Test\htmlForTest.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
