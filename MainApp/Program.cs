@@ -9,8 +9,8 @@ namespace MainApp
         {
             try
             {
-                CourtGovUaParser parser = new CourtGovUaParser(HtmlStringForParser.GetTestString());
-                PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
+                //CourtGovUaParser parser = new CourtGovUaParser(HtmlStringForParser.GetTestString());
+                //PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
 
                 /*
                  * Для полной работы закоментировать две строки выше и разкоментироввать строки из work региона
@@ -23,7 +23,7 @@ namespace MainApp
                 //var html = HtmlGetter.GetHtml(search);
                 //CourtGovUaParser parser = new CourtGovUaParser(html);
                 //var records = parser.ParseToRecords();
-
+                //PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
                 //// Данные получены, дальше делайте что хотите xD
                 //// to do...
 
