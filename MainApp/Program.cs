@@ -10,12 +10,15 @@ namespace MainApp
             try
             {
                 CourtGovUaParser parser = new CourtGovUaParser(HtmlStringForParser.GetTestString());
-                PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
+                //PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
+                RecordsCSVReport report = new RecordsCSVReport("test");
+                report.GenerateFile(parser.ParseToRecords());
 
                 /*
                  * Для полной работы закоментировать две строки выше и разкоментироввать строки из work региона
                  *
                  */
+
                 #region work
 
                 //Console.WriteLine("Input Searching word");
