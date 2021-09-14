@@ -20,3 +20,9 @@ and another file output example
 CourtGovUaParser parser = new CourtGovUaParser(HtmlStringForParser.GetTestString());  
 PrintConsoleRecords.PrintRecords(parser.ParseToRecords());
 ```
+6. Also you can write list of records to csv. Example:
+```csharp
+RecordsCSVReport report = new RecordsCSVReport("test"); // as a constructor parameter set file name
+report.GenerateFile(parser.ParseToRecords()); //  File will be created in folder 'Data'
+```
+   
