@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="CourtGovUaParser.cs" />
     <Compile Include="HtmlGetter.cs" />
-    <Compile Include="HtmlStringForParser.cs" />
+    <Compile Include="Models\HtmlStringForParser.cs" />
     <Compile Include="Models\PrintConsoleRecords.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

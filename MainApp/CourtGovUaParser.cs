@@ -88,7 +88,7 @@ namespace MainApp
             {
                 for (int i = 0; i < edrpList.Count; i++)
                 {
-                    records.Add(new Record(){Edrp = edrpList[i], Email = emailList[i]});
+                    records.Add(new Record(){Edrp = edrpList[i], Email = emailList[i].Replace(" ", "")});
                 }
             }
 
