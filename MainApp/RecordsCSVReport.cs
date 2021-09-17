@@ -25,7 +25,7 @@ namespace MainApp
                 sw.WriteLine("ЄДРПОУ,Адреса електронної пошти");
                 foreach (var record in records)
                 {
-                    sw.WriteLine($"{record.Edrp},{record.Email}");
+                    sw.WriteLine($"{record.Edrp},\"{record.Email}\"");
                 }
                 
             }
