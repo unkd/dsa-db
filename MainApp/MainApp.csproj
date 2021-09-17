@@ -66,6 +66,7 @@
     <Compile Include="Interfaces\IRecordsReport.cs" />
     <Compile Include="Models\HtmlStringForParser.cs" />
     <Compile Include="Models\PrintConsoleRecords.cs" />
+    <Compile Include="Models\RecordComparer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Record.cs" />
@@ -73,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Data\all.csv" />
     <None Include="Data\test.csv" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -80,7 +82,9 @@
     <Content Include="Test\AnswerExample.txt" />
     <Content Include="Test\htmlForTest.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

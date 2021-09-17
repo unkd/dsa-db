@@ -54,9 +54,9 @@ namespace MainApp
             ele1.Click();
 
             // Sleeps need to catch AJAX 
-            Thread.Sleep(3000);
+            Thread.Sleep(20000);
             string ans = driver.PageSource;
-            Thread.Sleep(3000);
+            Thread.Sleep(3500);
             driver.Close();
             Console.WriteLine("Case ended ");
 
